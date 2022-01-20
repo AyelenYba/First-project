@@ -1,0 +1,55 @@
+main {
+    max-width: 80%;
+    margin: 50px auto 50px auto;
+}
+
+.location-container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    align-items: center;
+}
+
+.info-location-container{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.info-location-container h1 {
+    line-height: 4rem;
+}
+
+.info-location-container p {
+    line-height: 2rem;
+}
+
+.map-container iframe {
+    width: 650px;
+    height: 600px;
+}
+
+
+@media (max-width:767px) {
+    .location-container {
+        flex-direction: column;
+    }
+
+    .map-container iframe{
+        width: 280px;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .map-container iframe{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .map-container iframe{
+        width: 450px;
+        height: 400px;
+    }
+
+}

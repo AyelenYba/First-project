@@ -1,0 +1,18 @@
+body {
+    background: rgb(213,246,247);
+    background: linear-gradient(0deg, rgba(213,246,247,1) 4%, rgba(222,196,247,1) 67%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#form {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 2rem 3rem 2rem 3rem;
+}

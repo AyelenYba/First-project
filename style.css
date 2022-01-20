@@ -1,0 +1,516 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 239, 249);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*login */
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; 
+    background-color: rgb(234, 171, 247);
+    height: 30px;
+}
+
+.login a {
+    display: flex;
+    align-items: center;
+    padding: 0.6em;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+/*Marca container*/
+
+.marca-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(240, 199, 248);
+    height: 200px;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 0.1rem;
+    position: relative;
+    color: rgb(28, 26, 26);
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 7.5rem;
+}
+
+
+/* Barra nav */
+.nav-container {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(234, 174, 247, 0.95);
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    box-sizing: border-box; /*para que no genere un scroll horizontal*/
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 2.7rem;
+    margin: 1em;
+    display: block;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navigation-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu a {
+    padding: 0.5em;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.nav-menu #home {
+    display: none;
+}
+
+.nav-menu a:hover {
+    background-color: rgb(227, 158, 250);
+    border-radius: 0.3em;
+    transition: .5s;
+}
+
+
+#btn-menu {
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    padding: 0 0 0 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* New Arrivals */
+
+.newarrivals-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.newarrivals-container img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+
+}
+/* Destacados*/
+
+.destacados-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.destacados-title {
+    font-family: 'Open Sans', sans-serif;
+    margin: 2.3em;
+    text-align: center;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+    font-size: 1.4rem;
+}
+
+.productos-destacados {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1.1em;
+    margin-bottom: 6rem;
+}
+
+.img-destacados {
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 300ms;
+}
+
+.destacados {
+    background-color:rgba(239, 206, 243, 0.5) ;
+    border-radius: 10px;
+}
+
+.destacados .product-info-container {
+    color: black;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.08em; 
+}
+
+.destacados a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.product-info a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
+.destacados .product-btns a:hover {
+    color: rgb(105, 26, 124);
+    transition: 0.2s;
+}
+
+.product-btns {
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 0.5rem;
+    line-height: 3rem;
+}
+
+.img-destacados:hover {
+    transform: scale(1.05);
+}
+
+/* Footer*/
+footer {
+    background: rgb(182, 135, 197);
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 20px;
+}
+
+.footer-container ul{
+    display: block;
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+}
+
+.footer-container a{
+    text-decoration: none;
+    color:black;
+}
+
+.social-media-container {
+    max-width: 100%;
+    color:rgb(0, 0, 0);
+}
+
+.footer-title {
+    font-weight:  700;
+    font-size: 1.2rem;
+    padding: 20px 0 12px 0;
+    letter-spacing: 0.15rem;
+}
+
+.footer-icons {
+    line-height: 24px;
+    width: 150px;
+    margin-left: 0px;
+}
+
+.socialmedia-icon i{
+    color:rgb(0, 0, 0);
+    font-size: 1.8em;
+    letter-spacing: 18px;
+    margin-top: 12px;
+}
+
+
+.parallax-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7 rem 0;
+    background: url(6247764.jpg) center center / cover no-repeat fixed;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  En vez de utilizar éstas tres, puedo utilizar background*/ 
+    height: 250px;
+    margin-top: 3em;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(16, 15, 15, 0.952);
+}
+
+.parallax-container i{
+    margin-right: 20px;
+}
+
+
+/*parallax le faltaría parte de JS*/
+
+
+
+
+@media (max-width:768px) {
+    .nav-menu #home {
+        display: block;
+    }
+
+    .productos-destacados {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .login-container, .logo, .marca-container{
+        display: none;
+    }
+
+    .parallax-container {
+        font-size: 0.4rem;
+        height: 100px;
+    }
+
+    .destacados-title p{
+        font-size: 0.8rem;
+    }
+
+    /*Nav */
+    #btn-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-container {
+        height: 40px;
+        top: 0;
+    }
+    .navigation-bar {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        position: fixed;
+        top: 40px;
+        background-color: rgb(249, 181, 255);
+        height: 30%;
+        overflow-y: auto; /*Para que me ponga una barra de scroll en ese menú de ser necesario*/
+        line-height: 2.5rem;
+        right: 0; /*Así funciona el toggle*/
+        transition: right 0.3s;
+    }
+
+    .nav-right-menu {
+        visibility: hidden;
+    }
+    .nav-left-menu {
+        flex-direction: column;
+        /*align-self: flex-start;*/
+        padding: 1rem 0 1rem 0;
+        font-size: 0.85rem;
+    }
+
+    .nav-menu a:hover {
+        background: none;
+        color:rgb(101, 28, 119);
+    }
+    
+    .nav-menu_visible {
+        right: 100%; /*Vuelve a su posición para que aparezca el menú*/
+    }
+
+    /*Productos destacados*/
+
+    .destacados .product-info-container {
+        font-size: 0.8rem;
+    }
+
+    /*Footer*/
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .footer-container ul{
+        font-size: 0.7rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.05em;
+    }
+    
+    .social-media-container {
+        align-items: center;
+        color:rgb(0, 0, 0);
+    }
+    
+    .footer-title {
+        font-size: 0.75rem;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        letter-spacing: 0.15rem;
+    }
+    
+    .socialmedia-icon i{
+        font-size: 1em;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .productos-destacados {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .logo-img {
+        max-height: 4.5rem;
+    }
+
+    .parallax-container {
+        font-size: 0.6rem;
+        height: 150px;
+    }
+
+    .destacados-title {
+        font-size: 0.9rem;
+    }
+
+    /*Nav */
+
+    .nav-menu {
+        font-size: 0.8rem;
+    }
+    .destacados .product-info-container {
+        font-size: 0.85rem;
+    }
+    
+    .footer-container ul{
+        font-size: 0.75rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.05em;
+    }
+
+    .footer-title {
+        font-size: 0.85rem;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        letter-spacing: 0.15rem;
+    }
+    
+    .socialmedia-icon i{
+        font-size: 1.1em;
+        padding-top: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .productos-destacados {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .login a{
+        font-size: 0.9rem;
+    }
+
+    .marca-container {
+        height: 160px;
+        font-size: 0.68rem;
+    }
+    
+    .logo-img {
+        max-height: 6rem;
+    }
+
+    .parallax-container {
+        font-size: 0.9rem;
+        height: 180px;
+    }
+
+    .nav-menu {
+        font-size: 1rem;
+    }
+
+    .destacados-title {
+        font-size: 1.13rem;
+    }
+
+
+    .destacados .product-info-container {
+        font-size: 0.9rem;
+    }
+    
+    .footer-container ul{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.05em;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+        padding-top: 20px;
+        letter-spacing: 0.15rem;
+    }
+    
+    .socialmedia-icon i{
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .productos-destacados {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
